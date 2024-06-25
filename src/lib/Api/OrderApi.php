@@ -3605,7 +3605,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        'RestOrderReadDTO2',
+                        '\Apilo\Model\RestOrderReadDTO2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
