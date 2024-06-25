@@ -80,7 +80,7 @@ class RestOrderNoteDTO implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'type' => false,
 		'created_at' => false,
 		'comment' => false
@@ -91,7 +91,7 @@ class RestOrderNoteDTO implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

@@ -104,7 +104,7 @@ class RestDocumentDTO implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'id' => false,
 		'document_number' => false,
 		'original_amount_total_with_tax' => false,
@@ -127,7 +127,7 @@ class RestDocumentDTO implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

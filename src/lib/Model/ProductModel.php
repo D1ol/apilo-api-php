@@ -98,7 +98,7 @@ class ProductModel implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'name' => false,
 		'unit' => false,
 		'weight' => false,
@@ -118,7 +118,7 @@ class ProductModel implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

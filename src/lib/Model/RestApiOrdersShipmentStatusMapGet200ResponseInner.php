@@ -82,7 +82,7 @@ class RestApiOrdersShipmentStatusMapGet200ResponseInner implements ModelInterfac
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'id' => false,
 		'key' => false,
 		'description' => false,
@@ -94,7 +94,7 @@ class RestApiOrdersShipmentStatusMapGet200ResponseInner implements ModelInterfac
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

@@ -76,7 +76,7 @@ class CreateCategoriesResponse implements ModelInterface, ArrayAccess, \JsonSeri
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'categories' => false
     ];
 
@@ -85,7 +85,7 @@ class CreateCategoriesResponse implements ModelInterface, ArrayAccess, \JsonSeri
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

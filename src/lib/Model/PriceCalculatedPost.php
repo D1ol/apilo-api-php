@@ -82,7 +82,7 @@ class PriceCalculatedPost implements ModelInterface, ArrayAccess, \JsonSerializa
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'product' => false,
 		'price' => false,
 		'custom_price_modify' => false,
@@ -94,7 +94,7 @@ class PriceCalculatedPost implements ModelInterface, ArrayAccess, \JsonSerializa
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

@@ -78,7 +78,7 @@ class GetProductsResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'products' => false,
 		'total_count' => false
     ];
@@ -88,7 +88,7 @@ class GetProductsResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

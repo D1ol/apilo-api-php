@@ -118,7 +118,7 @@ class RestOrderWriteDTO implements ModelInterface, ArrayAccess, \JsonSerializabl
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'platform_id' => false,
 		'id_external' => false,
 		'is_invoice' => false,
@@ -148,7 +148,7 @@ class RestOrderWriteDTO implements ModelInterface, ArrayAccess, \JsonSerializabl
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

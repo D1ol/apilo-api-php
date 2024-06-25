@@ -90,7 +90,7 @@ class RestOrderDocumentDTO3 implements ModelInterface, ArrayAccess, \JsonSeriali
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'id_external' => false,
 		'number' => false,
 		'price_with_tax' => false,
@@ -106,7 +106,7 @@ class RestOrderDocumentDTO3 implements ModelInterface, ArrayAccess, \JsonSeriali
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
