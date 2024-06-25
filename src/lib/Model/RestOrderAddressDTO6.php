@@ -98,7 +98,7 @@ class RestOrderAddressDTO6 implements ModelInterface, ArrayAccess, \JsonSerializ
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'name' => false,
 		'phone' => false,
 		'email' => false,

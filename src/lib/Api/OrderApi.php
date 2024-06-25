@@ -3490,11 +3490,11 @@ class OrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('RestOrderReadDTO2' === '\SplFileObject') {
+                    if ('\Apilo\Model\RestOrderReadDTO2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('RestOrderReadDTO2' !== 'string') {
+                        if ('\Apilo\Model\RestOrderReadDTO2' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3512,7 +3512,7 @@ class OrderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, 'RestOrderReadDTO2', []),
+                        ObjectSerializer::deserialize($content, '\Apilo\Model\RestOrderReadDTO2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
